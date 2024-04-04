@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-version: 2.1
-=======
 version: 2.1 
->>>>>>> bd593701c4aa38065ef4f995dd01ead146842707
-
 jobs:
   build-and-test:
     machine:
       image: ubuntu-2004:202104-01
-<<<<<<< HEAD
     steps:
-=======
-    steps: 
->>>>>>> bd593701c4aa38065ef4f995dd01ead146842707
       - checkout
       - run: make deps
       - run: make test
 workflows:
   basic:
     jobs:
-      - build-and-test
+      - build-and-test 
